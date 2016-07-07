@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title>Study English</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  	<script src="js/jquery.js"></script>
+  	<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+	
+	<script type="text/javascript">
+
+		function maychu1(){
+			setTimeout("location.href='http://trothuhoctap.com'",2000);
+		}
+		function maychu2(){
+			location.href='http://www.trothuhoctap.com';
+		}
+		function loiketnoi(){
+			location.href='#loiketnoi';
+		}
+
+	</script>
+	
+</head>
+<body>
+	<div data-role="page" id="page" data-theme="b">
+		<div data-role="header" data-position="fixed">
+		  	<h1>Cùng bạn học tiếng anh</h1> 	
+		</div>
+		<div align='center' data-role="content">
+	    		<hr/>
+	    			<hr/>
+	    			 <img src="logo.gif" width=100%>
+	    			 <hr/>
+	    			 <h4>Xin chào các bạn</h4>
+	    			 <img src="loader.gif">
+	    			 <img src="loader.gif"  width="1" height="1" onload="maychu1()" onerror="loiketnoi()">
+	    			 <br/>
+	     
+	    		<hr/>
+		</div>
+	</div>
+
+	<div data-role="page" id="loiketnoi" data-theme="b">
+		<div data-role="header" data-position="fixed">
+		  	<h1>Cùng bạn học tiếng anh</h1> 	
+		</div>
+		<div align='center' data-role="content">
+	    		<h1>Lỗi kết nối:</h1>
+	    		<h3>Vui lòng bật kết nối Internet (Wifi hoặc GPRS/3G) cho thiết bị</h3>
+	    		<a href="#page" data-role="button" data-inline="true" data-icon="recycle">Thử lại</a>
+	    		<h3>Hoặc</h3>
+	    		<a href="#" onclick="maychu2()">Truy cập Server dự phòng</a>
+		</div>
+	</div>
+</body>
+</html>
